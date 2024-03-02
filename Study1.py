@@ -111,5 +111,16 @@ print(a[::2]) # -1 거꾸로
 
 '''문자열 포맷팅'''
 
+print(" %10.4f " % 3.41233332) #칸 표시, 소수점 표시
+# %s	문자열(String) 만능
+# %c	문자 1개(character)
+# %d	정수(Integer)
+# %f	부동소수(floating-point)
+# %o	8진수
+# %x	16진수
+# %%	Literal % (문자 % 자체)
+a = "{0} {1}".format(2,4)
+b = "{number} {day}".format(number=3, day=5)
+print(a+"\n"+b)
 
 
