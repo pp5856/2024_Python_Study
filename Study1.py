@@ -123,4 +123,77 @@ a = "{0} {1}".format(2,4)
 b = "{number} {day}".format(number=3, day=5)
 print(a+"\n"+b)
 
+a = "{0:>10}".format("hi")
+print(a)
+a = "{0:*^10}".format("hi") # 10 = 칸수, > = 오른쪽 정렬, ^가운데 정렬, 앞에 문자는 공백 채우기
+print(a)
 
+name = "hi"
+a = f"{name:#>10}"
+print(a)
+"""f 포맷팅 제일 최신**"""
+name = "응애"
+print(f"{name}")
+
+age = 21
+a = f'내년엔 {age + 1}이다'
+print(a)
+
+y = 5.3124125
+a = f'{y:0.6f}'
+print(a)
+
+number = 1234567890
+print(f"{number:,}")
+
+'''문자열 관련 메소드'''
+
+a = "hobby"
+print(a.count('b'))
+
+print(a.find('b')) #문자열이 처음으로 나온 인덱스의 위치를 반환한다. / 없는거 -1 반환
+
+#print(a.index('x')) find 함수랑 비슷하지만 없는 거 했을 때 에러남
+
+a = ",".join('abcd') #문자열 사이사이에 문자 넣음
+print(a)
+
+a = ",".join(['a','b','c'])
+print(a)
+
+a ='hi'
+print(a.upper()) #대문자
+
+a = a.upper()
+print(a)
+print(a.lower()) # 소문자 바꾸기
+
+a = "      s dd          "
+print(a.rstrip()) #오른쪽 공백 지우기
+print(a.lstrip())
+print(a.strip())
+
+'''replace(,)문자열 바꾸기'''
+
+a = "Life is too short"
+print(a.replace("Life", "Your face"))
+
+print(a.split()) #문자열 쪼개기
+#split 아무것도 없을 땐 띄어쓰기 기준으로 나눔
+a = "a:b:c:d"
+print(a.split(":"))
+a = a.split(":")
+print(type(a))
+
+
+print('='*50)
+
+
+"""리스트 자료형"""
+
+a = [1, 2, 3, 4, 5, 's', 'd']
+print(a[0:5:2])
+print(a[::3])
+
+a = [1, 2, ['a','b','c']]
+print(a[1:4])
